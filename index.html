@@ -3,30 +3,60 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <title>Lucky Numbers</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <div class="top">
-        <button class="btn again"><strong>Play Again</strong></button>
-        <p class="btw">(Between 1 and 20)</p>
-      </div>
-      <h1>Guess My Number!</h1>
-
-      <div class="qtn">?</div>
-    </header>
     <main>
-      <section class="play">
-        <div class="form">
-          <input class="input" type="number" />
-          <button class="btn check"><strong>Check!</strong></button>
+      <section class="section-one">
+        <div class="title">
+          <h1>Lucky<br />Numbers</h1>
+          <p>- By Erica</p>
         </div>
+        <div class="rules">
+          <h2>Game Rules</h2>
+          <ol class="game-rules">
+            <li>There is a hidden number behind the large square.</li>
+            <li>Your goal is to guess what it is in 20 guesses or less.</li>
+            <li>The number falls between 1 and 99.</li>
+            <li>You lose the game when you run out of guesses.</li>
+          </ol>
+        </div>
+
+        <details>
+          <summary>Read game rules</summary>
+          <ol class="game-rules">
+            <li>There is a hidden number behind the large square.</li>
+            <li>Your goal is to guess what it is in 20 guesses or less.</li>
+            <li>The number falls between 1 and 99.</li>
+            <li>You lose the game when you run out of guesses.</li>
+          </ol>
+        </details>
+        <p class="happy">Happy Guessing :)</p>
       </section>
-      <section class="fback">
-        <p class="p1">Start Guessing...</p>
-        <p class="p2">💯 Your Score: <span class="score">20</span></p>
-        <p class="p2">🥇 Current Highscore: <span class="highscore">0</span></p>
+      <section class="section-two">
+        <div class="question">
+          <p class="subtitle">Play Game</p>
+          <div class="qtn">?</div>
+        </div>
+        <div class="fback-section">
+          <p class="fback">Start Guessing...</p>
+          <div class="input-check">
+            <input class="input" type="number" />
+            <button class="btn check">Guess</button>
+          </div>
+        </div>
+        <div class="scores-section">
+          <p class="scores">
+            Guesses left: <span class="guesses-left">0</span>
+          </p>
+          <p class="scores">Highscore: <span class="highscore">0</span></p>
+        </div>
+        <button class="play-again">Play Again</button>
       </section>
     </main>
     <script src="script.js"></script>
